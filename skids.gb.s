@@ -1,4 +1,4 @@
-INCLUDE "macros.asm"
+INCLUDE "macros.gb.s"
 
 SECTION "ROM Bank 00", ROM0
     dr $0000, $4000
