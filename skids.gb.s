@@ -1,7 +1,13 @@
 INCLUDE "macros.gb.s"
 
-SECTION "ROM Bank 00", ROM0
-    dr $0000, $4000
+SECTION "Hardware Stuff", ROM0[$0]
+    dr $0000, $100
+
+SECTION "HEADER", ROM0[$100]
+    INCLUDE "includes/rom_header.inc"
+
+SECTION "ROM Bank 00", ROM0[$150]
+    dr $0150, $4000
 
 SECTION "ROM BANK 01", ROMX[$4000], BANK[$01]
     dr $4000, $8000
