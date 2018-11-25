@@ -1,2 +1,4 @@
 *.gbc
 *.idb
+*.o
+*.dump
